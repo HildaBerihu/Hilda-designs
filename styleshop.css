@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century gothic , Helvetica, sans-serif;
+}
+#page{
+    background:linear-gradient(rgba(0,0,0,.5),salmon) ,url(images/zemen.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+.logo{
+    width:250px;
+    position: absolute;
+top: 10px;
+    left: 0;
+}
+.head-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 0px;
+}
+.head-text h1{
+    font-size: 60px;
+    font-family: century gothic , Helvetica, sans-serif;
+}
+.head-text h2{ 
+    font-size: 20px;
+    font-family: century gothic , Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+
+
+#product-section{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #efefef;
+   
+}
+.product-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin: 10 px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+.single-service img{
+    width: 50px;
+      border-radius: 7px;
+}
+.overlay{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,.5),#dfe0db);
+    opacity: 0;
+    transition:1s;
+}
+.single-service:hover .overlay{
+    opacity: 1;
+
+}
+.service-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.service-desc p{
+    font-size: 14px;
+
+}
+.single-service:hover .service-desc{
+    bottom:40% ;
+    opacity: 1;
+}
+.buy-btn{
+    margin: 70px auto 0;
+}
+.buy-btn a{
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #cc2323;
+    font-weight: bolder;
+    font-size: xx-large;
+    border:.5px solid #da4d4d ;
+    position: relative;
+    z-index: 1 ;
+    transition:  0.5s;
+    text-align:center ;
+}
+.buy-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: salmon;
+    z-index:-1 ;
+    transition: 0.5s;
+}
+.buy-btn a:hover span{
+    width: 100%;
+}
+.buy-btn a:hover{
+    color: #000;
+}
+
+@media  screen and (max--width:770px){
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .service-desc p{
+        font-size: 10px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .single-service:hover .service-desc{
+        bottom:25% !important;
+        
+}
+}
+
+#link{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: #d1bebe;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+.home-link p a{
+    text-decoration: none;
+    color: #cc2323;
+    font-size: 20px;
+    margin: 0 0;
+   font-weight: lighter;
+}
+.home-link p a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+
